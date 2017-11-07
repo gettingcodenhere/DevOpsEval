@@ -4,6 +4,6 @@ yum install httpd -y
 echo "<html><marquee><body><h1>This is DevOpsEval</h1></body></marquee></html>" > /var/www/html/index.html
 service httpd start
 chkconfig httpd on
-wget -O /usr/bin/eval-server.linux-x86_64 https://github.com/PerformLine/DevOpsEval/blob/master/bin/eval-server.linux-x86_64
-chmod 500 /usr/bin/eval-server.linux-x86_64
-sh /usr/bin/eval-server.linux-x86_64
+wget -O /usr/local/bin/eval-server.linux-x86_64 https://github.com/PerformLine/DevOpsEval/blob/master/bin/eval-server.linux-x86_64
+chmod 500 /usr/local/bin/eval-server.linux-x86_64
+/usr/local/bin/eval-server.linux-x86_64 &
