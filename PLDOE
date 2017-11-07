@@ -1,0 +1,4 @@
+#!/bin/bash
+yum update -y
+yum install httpd -y
+echo "<html><marquee><body><h1>This is DevOpsEval</h1></body></marquee></html> > /var/www/html/index.html
